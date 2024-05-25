@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <title>Portfolio Wirda Almahera</title>
+
+        <style>
+            .pdf-container {
+                width: 100%;
+                height: 300px; /* Sesuaikan tinggi sesuai kebutuhan */
+                border: none;
+            }
+            .work__img {
+                display: block;
+                width: 100%;
+                height: 300px; /* Sesuaikan tinggi sesuai kebutuhan */
+                border: 1px solid #ddd;
+                margin-bottom: 20px;
+                position: relative;
+                overflow: hidden; /* Menambahkan ini untuk memastikan gambar terpotong dengan baik */
+            }
+            .work__img img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain; /* atau scale-down */
+            }
+
+            .work__description {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                background: rgba(0, 0, 0, 0.6);
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+            .certificate__item {
+                margin-bottom: 20px;
+            }
+            .certificate__name {
+                text-align: center;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
+            /* Memusatkan konten teks di bagian "About" */
+            .about__container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+            }
+
+            .about__text {
+                max-width: 600px; /* Sesuaikan lebar maksimum sesuai kebutuhan */
+                margin: 0 auto; /* Memusatkan konten teks */
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Wirda Almahera</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Halo Semua,<br>Saya <span class="home__title-color">Wirda</span><br> Almahera</h1>
+
+                    <a href="assets/pdf/Resume.pdf" class="button" download>Download CV</a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/profilenew.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+           <!--===== ABOUT =====-->
+           <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+        
+            <div class="about__container bd-grid">
+                <div class="about__text" style="text-align: justify;">
+                    <h2 class="about__subtitle" style="text-align: center;">Halo, saya Wirda Almahera</h2>
+                    <p>Halo semua! Saya adalah Wirda Almahera, seorang lulusan baru dari SMK Wikrama Bogor dengan jurusan Pengembangan Perangkat Lunak dan Gim. Selama enam bulan, saya memiliki kesempatan untuk berpartisipasi dalam praktik kerja lapangan di PT. Anantarupa Studio sebagai Quality Assurance, yang memperluas pemahaman saya dalam menguji dan memastikan kualitas produk perangkat lunak.</p>
+                    <br><p>Saya juga memiliki minat yang mendalam dalam desain dan menciptakan antarmuka pengguna yang menarik dan fungsional. Selain itu, saya juga tertarik dalam mengembangkan pengalaman web dan aplikasi web yang menyenangkan dan bermanfaat bagi pengguna.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+            
+                <div class="skills__container bd-grid">          
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML</span>
+                        </div>
+                        <div class="skills__bar skills__html"></div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS</span>
+                        </div>
+                        <div class="skills__bar skills__css"></div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">Javascript</span>
+                        </div>
+                        <div class="skills__bar skills__js"></div>
+                        <div>
+                            <span class="skills__percentage">50%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="fab fa-laravel skills__icon"></i>
+                            <span class="skills__name">Laravel</span>
+                        </div>
+                        <div class="skills__bar skills__laravel"></div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="fab fa-php skills__icon"></i>
+                            <span class="skills__name">PHP</span>
+                        </div>
+                        <div class="skills__bar skills__php"></div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                    
+            <section class="skills section" id="tools">
+                <h2 class="section-title">Tools</h2>
+            
+                <div class="skills__container bd-grid">          
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="fab fa-git-alt fa-flip-both skills__icon"></i>
+                            <span class="skills__name">Git</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="fas fa-database skills__icon"></i>
+                            <span class="skills__name">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="fab fa-github skills__icon"></i>
+                            <span class="skills__name">Github</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="fas fa-calendar-check skills__icon"></i>
+                            <span class="skills__name">JIRA</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="fas fa-clipboard-list skills__icon"></i>
+                            <span class="skills__name">Taiga</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="projects">
+                <h2 class="section-title">Project</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="https://github.com/wirdaalmahera/to-do-App-Laravel-.git" class="work__img" target="_blank">
+                        <img src="assets/img/to-do.jpeg" alt="">
+                        <div class="work__description">To-Do App</div>
+                    </a>
+                    <a href="https://github.com/wirdaalmahera/kasir_App.git" class="work__img" target="_blank">
+                        <img src="assets/img/kasir.jpg" alt="">
+                        <div class="work__description">Kasir App</div>
+                    </a>
+                    <a href="https://github.com/Aliyahalda/PW_Infak_kelompok-3.git" class="work__img" target="_blank">
+                        <img src="assets/img/infaq" alt="">
+                        <div class="work__description">Infaq Sodaqoh (Project Work)</div>
+                    </a>
+                    <a href="https://github.com/wirdaalmahera/rentbooks.git" class="work__img" target="_blank">
+                        <img src="assets/img/perpuss.png" alt="">
+                        <div class="work__description">Perpustakaan Online</div>
+                    </a>
+                    <a href="https://github.com/wirdaalmahera/ppdb_wikrama.git" class="work__img" target="_blank">
+                        <img src="assets/img/4f1be343-1d8a-40dd-bbfd-b694ec56a96e.jpeg" alt="">
+                        <div class="work__description">Website PPDB SMK Wikrama</div>
+                    </a>
+                    <!-- <a href="https://github.com/wirdaalmahera/project6" class="work__img" target="_blank">
+                        <img src="assets/img/work6.jpg" alt="">
+                        <div class="work__description">Pengaduan Masyarakat Website</div>
+                    </a> -->
+                </div>
+            </section>
+
+            <!--===== CERTIFICATE =====-->
+            <section class="work section" id="certificate">
+                <h2 class="section-title">Certificate</h2>
+                <div class="work__container bd-grid">
+                    <div class="certificate__item">
+                        <iframe class="pdf-container" src="assets/pdf/Certificate Certiport.pdf"></iframe>
+                        <div class="certificate__name">Information Technology Specialist HTML and CSS</div>
+                    </div>
+                    <div class="certificate__item">
+                        <iframe class="pdf-container" src="assets/pdf/dicoding Java.pdf"></iframe>
+                        <div class="certificate__name">Memulai Pemrograman Dengan Java</div>
+                    </div>
+                    <div class="certificate__item">
+                        <iframe class="pdf-container" src="assets/pdf/LearnKey.pdf"></iframe>
+                        <div class="certificate__name"> HTML and CSS</div>
+                    </div>
+                    <div class="certificate__item">
+                        <iframe class="pdf-container" src="assets/pdf/Sertifikat PKL.pdf"></iframe>
+                        <div class="certificate__name">Praktek Kerja Lapangan</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer" id="contact">
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/wirda-almahera" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:almaherawirda@gmail.com" class="footer__icon"><i class='bx bxs-envelope'></i></a>
+                <a href="https://github.com/wirdaalmahera" class="footer__icon"><i class='bx bxl-github' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; Wirda Almahera</p>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
